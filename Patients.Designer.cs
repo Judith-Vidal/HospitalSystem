@@ -199,7 +199,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnAdd.BackColor = System.Drawing.Color.Lime;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
