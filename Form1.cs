@@ -35,6 +35,7 @@ namespace HospitalSystem
             // Clear the text fields for username and password
             txtUsername.Text = string.Empty;
             txtPassword.Text = string.Empty;
+            txtUsername.Focus();
         }
 
         private void btnLogin_Click_1(object sender, EventArgs e) {
