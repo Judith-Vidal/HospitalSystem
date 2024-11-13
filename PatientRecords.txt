@@ -1,0 +1,6 @@
+Patient Id: 1
+Full Name: Grace
+Phone Number: 12345678
+Gender: Female
+Age: 35
+Address: 12 banana
