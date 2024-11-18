@@ -48,8 +48,8 @@
             this.btnPatients = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.doctors1 = new HospitalSystem.Doctors();
             this.patients1 = new HospitalSystem.Patients();
+            this.doctors1 = new HospitalSystem.Doctors();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -314,13 +314,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // doctors1
-            // 
-            this.doctors1.Location = new System.Drawing.Point(233, 42);
-            this.doctors1.Name = "doctors1";
-            this.doctors1.Size = new System.Drawing.Size(867, 558);
-            this.doctors1.TabIndex = 2;
-            // 
             // patients1
             // 
             this.patients1.BackColor = System.Drawing.SystemColors.Control;
@@ -328,6 +321,14 @@
             this.patients1.Name = "patients1";
             this.patients1.Size = new System.Drawing.Size(867, 558);
             this.patients1.TabIndex = 3;
+            this.patients1.Load += new System.EventHandler(this.patients1_Load);
+            // 
+            // doctors1
+            // 
+            this.doctors1.Location = new System.Drawing.Point(233, 42);
+            this.doctors1.Name = "doctors1";
+            this.doctors1.Size = new System.Drawing.Size(867, 558);
+            this.doctors1.TabIndex = 2;
             // 
             // Main
             // 
