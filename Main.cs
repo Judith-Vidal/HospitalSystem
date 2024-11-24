@@ -15,9 +15,9 @@ namespace HospitalSystem
         public Main()
         {
             InitializeComponent();
-            patients1.Visible = false;
-            doctors1.Visible = false;
-
+            patients2.Visible = false;
+            doctors2.Visible = false;
+            nurses1.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace HospitalSystem
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -47,15 +47,16 @@ namespace HospitalSystem
         */
         private void btnPatients_Click(object sender, EventArgs e)
         {
-            patients1.Visible = true;
-            doctors1.Visible = false;
-
+            patients2.Visible = true;
+            doctors2.Visible = false;
+            nurses1.Visible = false;
         }
 
         private void btnDoctors_Click(object sender, EventArgs e)
         {
-            doctors1.Visible = true;
-            patients1.Visible = false;
+            doctors2.Visible = true;
+            patients2.Visible = false;
+            nurses1.Visible = false;
         }
 
         private void doctors2_Load(object sender, EventArgs e)
@@ -76,6 +77,13 @@ namespace HospitalSystem
         private void patients1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNurses_Click(object sender, EventArgs e)
+        {
+            doctors2.Visible = false;
+            patients2.Visible = false;
+            nurses1.Visible = true;
         }
     }
 }

@@ -67,9 +67,10 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(16, 25);
+            this.panel1.Location = new System.Drawing.Point(12, 20);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(836, 284);
+            this.panel1.Size = new System.Drawing.Size(627, 231);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView
@@ -93,14 +94,16 @@
             this.Column5,
             this.Column6});
             this.dataGridView.EnableHeadersVisualStyles = false;
-            this.dataGridView.Location = new System.Drawing.Point(23, 48);
+            this.dataGridView.Location = new System.Drawing.Point(31, 42);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(791, 209);
+            this.dataGridView.Size = new System.Drawing.Size(566, 170);
             this.dataGridView.TabIndex = 1;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // Column1
             // 
@@ -154,9 +157,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 10);
+            this.label1.Location = new System.Drawing.Point(14, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 28);
+            this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patient Data";
             // 
@@ -180,9 +184,10 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtPatientID);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(16, 329);
+            this.panel2.Location = new System.Drawing.Point(12, 267);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(836, 202);
+            this.panel2.Size = new System.Drawing.Size(627, 164);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -194,9 +199,10 @@
             this.btnImport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnImport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnImport.Location = new System.Drawing.Point(635, 138);
+            this.btnImport.Location = new System.Drawing.Point(501, 94);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(82, 35);
+            this.btnImport.Size = new System.Drawing.Size(62, 28);
             this.btnImport.TabIndex = 18;
             this.btnImport.Text = "Import";
             this.btnImport.UseVisualStyleBackColor = false;
@@ -205,9 +211,10 @@
             // 
             this.patientPicture.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.patientPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.patientPicture.Location = new System.Drawing.Point(635, 24);
+            this.patientPicture.Location = new System.Drawing.Point(501, 20);
+            this.patientPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.patientPicture.Name = "patientPicture";
-            this.patientPicture.Size = new System.Drawing.Size(82, 92);
+            this.patientPicture.Size = new System.Drawing.Size(62, 75);
             this.patientPicture.TabIndex = 17;
             this.patientPicture.TabStop = false;
             // 
@@ -219,9 +226,10 @@
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(288, 138);
+            this.btnCancel.Location = new System.Drawing.Point(216, 112);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(97, 35);
+            this.btnCancel.Size = new System.Drawing.Size(73, 28);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -235,9 +243,10 @@
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(155, 138);
+            this.btnDelete.Location = new System.Drawing.Point(116, 112);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(97, 35);
+            this.btnDelete.Size = new System.Drawing.Size(73, 28);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -251,9 +260,10 @@
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(30, 138);
+            this.btnUpdate.Location = new System.Drawing.Point(22, 112);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(97, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(73, 28);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -261,18 +271,20 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(138, 101);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(104, 82);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(176, 22);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(133, 20);
             this.txtPhoneNumber.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(22, 103);
+            this.label7.Location = new System.Drawing.Point(16, 84);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 18);
+            this.label7.Size = new System.Drawing.Size(93, 14);
             this.label7.TabIndex = 11;
             this.label7.Text = "Phone Number:";
             // 
@@ -284,26 +296,29 @@
             "Female",
             "Non-Binary",
             "Other"});
-            this.cmbboxGender.Location = new System.Drawing.Point(409, 24);
+            this.cmbboxGender.Location = new System.Drawing.Point(307, 20);
+            this.cmbboxGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbboxGender.Name = "cmbboxGender";
-            this.cmbboxGender.Size = new System.Drawing.Size(109, 24);
+            this.cmbboxGender.Size = new System.Drawing.Size(83, 21);
             this.cmbboxGender.TabIndex = 10;
             this.cmbboxGender.SelectedIndexChanged += new System.EventHandler(this.cmbboxGender_SelectedIndexChanged);
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(409, 101);
+            this.txtAddress.Location = new System.Drawing.Point(307, 82);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(156, 22);
+            this.txtAddress.Size = new System.Drawing.Size(118, 20);
             this.txtAddress.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(338, 102);
+            this.label6.Location = new System.Drawing.Point(254, 83);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 18);
+            this.label6.Size = new System.Drawing.Size(54, 14);
             this.label6.TabIndex = 8;
             this.label6.Text = "Address:";
             // 
@@ -311,34 +326,38 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(343, 24);
+            this.label5.Location = new System.Drawing.Point(257, 20);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 18);
+            this.label5.Size = new System.Drawing.Size(51, 14);
             this.label5.TabIndex = 6;
             this.label5.Text = "Gender:";
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(409, 64);
+            this.txtAge.Location = new System.Drawing.Point(307, 52);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(80, 22);
+            this.txtAge.Size = new System.Drawing.Size(61, 20);
             this.txtAge.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(365, 64);
+            this.label4.Location = new System.Drawing.Point(274, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 18);
+            this.label4.Size = new System.Drawing.Size(33, 14);
             this.label4.TabIndex = 4;
             this.label4.Text = "Age:";
             // 
             // txtPatientName
             // 
-            this.txtPatientName.Location = new System.Drawing.Point(138, 63);
+            this.txtPatientName.Location = new System.Drawing.Point(104, 51);
+            this.txtPatientName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(176, 22);
+            this.txtPatientName.Size = new System.Drawing.Size(133, 20);
             this.txtPatientName.TabIndex = 3;
             this.txtPatientName.TextChanged += new System.EventHandler(this.txtPatientName_TextChanged);
             // 
@@ -346,17 +365,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(54, 63);
+            this.label3.Location = new System.Drawing.Point(40, 51);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 18);
+            this.label3.Size = new System.Drawing.Size(63, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name:";
             // 
             // txtPatientID
             // 
-            this.txtPatientID.Location = new System.Drawing.Point(138, 24);
+            this.txtPatientID.Location = new System.Drawing.Point(104, 20);
+            this.txtPatientID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPatientID.Name = "txtPatientID";
-            this.txtPatientID.Size = new System.Drawing.Size(152, 22);
+            this.txtPatientID.Size = new System.Drawing.Size(115, 20);
             this.txtPatientID.TabIndex = 1;
             this.txtPatientID.TextChanged += new System.EventHandler(this.txtPatientID_TextChanged);
             // 
@@ -364,21 +385,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 25);
+            this.label2.Location = new System.Drawing.Point(40, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 18);
+            this.label2.Size = new System.Drawing.Size(66, 14);
             this.label2.TabIndex = 0;
             this.label2.Text = "Patient ID:";
             // 
             // Patients
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Patients";
-            this.Size = new System.Drawing.Size(867, 558);
+            this.Size = new System.Drawing.Size(650, 453);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

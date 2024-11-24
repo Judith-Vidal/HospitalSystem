@@ -38,7 +38,7 @@ namespace HospitalSystem
             txtUsername.Focus();
         }
 
-        private void btnLogin_Click_1(object sender, EventArgs e) {
+        private void btnLogin_Click(object sender, EventArgs e) {
             // This methos is executed when the user clicks the login button
             if (txtUsername.Text == "admin" && txtPassword.Text == "1234") {
                     Main mainform = new Main(); // Create ans show the main window
@@ -48,6 +48,26 @@ namespace HospitalSystem
                     // If the username or password is incorrenct, show an error message
                     MessageBox.Show("Invalid username or password.\nTry again");
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
