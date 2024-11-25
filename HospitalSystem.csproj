@@ -65,6 +65,7 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="NurseInfo.cs" />
     <Compile Include="Nurses.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -12,11 +12,11 @@ namespace HospitalSystem
 {
     public partial class Doctors : UserControl
     {
-        // List to store patient information
+        // List to store doctor information
         List<DoctorInfo> doctorList = new List<DoctorInfo>();
 
         // Filepath to save the patient data
-        string filepath = "C:\\Users\\guzma\\source\\repos\\Hospital-System\\DoctorsInfo\\DoctorInfo.txt";
+        string filepath = "C:\\Users\\Judith\\source\\repos\\Hospital system_v3\\DoctorsInfo\\DoctorInfo.txt";
 
         public Doctors()
         {
@@ -91,7 +91,7 @@ namespace HospitalSystem
                 System.IO.File.WriteAllLines(filepath, output);
 
                 // Show confirmation message 
-                MessageBox.Show("\r\nData successfully updated and saved to the text file.");
+                MessageBox.Show("\r\nData delete updated and saved to the text file.");
                 showData(); // Refresh the grid with updated data
             }
             catch (Exception ex)
@@ -114,7 +114,7 @@ namespace HospitalSystem
             //Create a new doctor using the information entered in the form
             doctorList.Add(new DoctorInfo { doctorID = txtDoctorID.Text, fullName = txtDoctorName.Text, phoneNumber = txtPhoneNumber.Text, department = cmbboxDepartment.Text, specialty = cmbboxSpecialty.Text});
 
-            // Convert patient data to text lines
+            // Convert doctor data to text lines
             foreach (var elementObject in doctorList)
             {
                 output.Add($"{elementObject.doctorID}, {elementObject.fullName}, {elementObject.phoneNumber}, {elementObject.department}, {elementObject.specialty}");
