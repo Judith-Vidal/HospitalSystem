@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chkBoxPasword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -135,6 +136,7 @@
             this.txtPassword.Location = new System.Drawing.Point(42, 11);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(182, 18);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -288,12 +290,25 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // chkBoxPasword
+            // 
+            this.chkBoxPasword.AutoSize = true;
+            this.chkBoxPasword.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBoxPasword.Location = new System.Drawing.Point(402, 225);
+            this.chkBoxPasword.Name = "chkBoxPasword";
+            this.chkBoxPasword.Size = new System.Drawing.Size(107, 17);
+            this.chkBoxPasword.TabIndex = 12;
+            this.chkBoxPasword.Text = "Show Password";
+            this.chkBoxPasword.UseVisualStyleBackColor = true;
+            this.chkBoxPasword.CheckedChanged += new System.EventHandler(this.chkBoxPasword_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(535, 340);
+            this.Controls.Add(this.chkBoxPasword);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label3);
@@ -348,6 +363,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.CheckBox chkBoxPasword;
     }
 }
 

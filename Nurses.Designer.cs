@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbboxDepart = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnImport = new System.Windows.Forms.Button();
-            this.patientPicture = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -45,13 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewNurse = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientPicture)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNurse)).BeginInit();
             this.SuspendLayout();
@@ -61,8 +58,6 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.cmbboxDepart);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.btnImport);
-            this.panel2.Controls.Add(this.patientPicture);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
@@ -72,10 +67,10 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNurseID);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(15, 330);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(11, 268);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(836, 202);
+            this.panel2.Size = new System.Drawing.Size(627, 164);
             this.panel2.TabIndex = 3;
             // 
             // cmbboxDepart
@@ -88,48 +83,22 @@
             "D",
             "E",
             "F"});
-            this.cmbboxDepart.Location = new System.Drawing.Point(451, 39);
-            this.cmbboxDepart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbboxDepart.Location = new System.Drawing.Point(410, 29);
+            this.cmbboxDepart.Margin = new System.Windows.Forms.Padding(2);
             this.cmbboxDepart.Name = "cmbboxDepart";
-            this.cmbboxDepart.Size = new System.Drawing.Size(77, 24);
+            this.cmbboxDepart.Size = new System.Drawing.Size(59, 21);
             this.cmbboxDepart.TabIndex = 20;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(353, 43);
+            this.label5.Location = new System.Drawing.Point(336, 32);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 18);
+            this.label5.Size = new System.Drawing.Size(77, 14);
             this.label5.TabIndex = 19;
             this.label5.Text = "Department:";
-            // 
-            // btnImport
-            // 
-            this.btnImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnImport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnImport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnImport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnImport.Location = new System.Drawing.Point(696, 116);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(83, 34);
-            this.btnImport.TabIndex = 18;
-            this.btnImport.Text = "Import";
-            this.btnImport.UseVisualStyleBackColor = false;
-            // 
-            // patientPicture
-            // 
-            this.patientPicture.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.patientPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.patientPicture.Location = new System.Drawing.Point(696, 25);
-            this.patientPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.patientPicture.Name = "patientPicture";
-            this.patientPicture.Size = new System.Drawing.Size(82, 92);
-            this.patientPicture.TabIndex = 17;
-            this.patientPicture.TabStop = false;
             // 
             // btnCancel
             // 
@@ -139,10 +108,10 @@
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(288, 138);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Location = new System.Drawing.Point(360, 110);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(97, 34);
+            this.btnCancel.Size = new System.Drawing.Size(73, 28);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -156,10 +125,10 @@
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(155, 138);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Location = new System.Drawing.Point(260, 110);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(97, 34);
+            this.btnDelete.Size = new System.Drawing.Size(73, 28);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -173,10 +142,10 @@
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(29, 138);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Location = new System.Drawing.Point(166, 110);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(97, 34);
+            this.btnUpdate.Size = new System.Drawing.Size(73, 28);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -184,55 +153,59 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(451, 81);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(410, 63);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(176, 22);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(133, 20);
             this.txtPhoneNumber.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(333, 82);
+            this.label7.Location = new System.Drawing.Point(321, 64);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 18);
+            this.label7.Size = new System.Drawing.Size(93, 14);
             this.label7.TabIndex = 11;
             this.label7.Text = "Phone Number:";
             // 
             // txtNurseName
             // 
-            this.txtNurseName.Location = new System.Drawing.Point(117, 81);
-            this.txtNurseName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNurseName.Location = new System.Drawing.Point(159, 63);
+            this.txtNurseName.Margin = new System.Windows.Forms.Padding(2);
             this.txtNurseName.Name = "txtNurseName";
-            this.txtNurseName.Size = new System.Drawing.Size(176, 22);
+            this.txtNurseName.Size = new System.Drawing.Size(133, 20);
             this.txtNurseName.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 81);
+            this.label3.Location = new System.Drawing.Point(96, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 18);
+            this.label3.Size = new System.Drawing.Size(63, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name:";
             // 
             // txtNurseID
             // 
-            this.txtNurseID.Location = new System.Drawing.Point(117, 42);
-            this.txtNurseID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNurseID.Location = new System.Drawing.Point(159, 32);
+            this.txtNurseID.Margin = new System.Windows.Forms.Padding(2);
             this.txtNurseID.Name = "txtNurseID";
-            this.txtNurseID.Size = new System.Drawing.Size(152, 22);
+            this.txtNurseID.Size = new System.Drawing.Size(115, 20);
             this.txtNurseID.TabIndex = 1;
+            this.txtNurseID.TextChanged += new System.EventHandler(this.txtNurseID_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 43);
+            this.label2.Location = new System.Drawing.Point(96, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 18);
+            this.label2.Size = new System.Drawing.Size(58, 14);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nurse ID:";
             // 
@@ -241,24 +214,24 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.dataGridViewNurse);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(15, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(11, 21);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(836, 284);
+            this.panel1.Size = new System.Drawing.Size(627, 231);
             this.panel1.TabIndex = 2;
             // 
             // dataGridViewNurse
             // 
             this.dataGridViewNurse.AllowUserToAddRows = false;
             this.dataGridViewNurse.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewNurse.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewNurse.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewNurse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNurse.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -266,25 +239,16 @@
             this.Column4,
             this.Column3});
             this.dataGridViewNurse.EnableHeadersVisualStyles = false;
-            this.dataGridViewNurse.Location = new System.Drawing.Point(107, 54);
-            this.dataGridViewNurse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewNurse.Location = new System.Drawing.Point(47, 44);
+            this.dataGridViewNurse.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewNurse.Name = "dataGridViewNurse";
             this.dataGridViewNurse.ReadOnly = true;
             this.dataGridViewNurse.RowHeadersVisible = false;
             this.dataGridViewNurse.RowHeadersWidth = 51;
             this.dataGridViewNurse.RowTemplate.Height = 24;
-            this.dataGridViewNurse.Size = new System.Drawing.Size(629, 209);
+            this.dataGridViewNurse.Size = new System.Drawing.Size(534, 170);
             this.dataGridViewNurse.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nurse Data";
+            this.dataGridViewNurse.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNurse_CellContentClick);
             // 
             // Column1
             // 
@@ -300,7 +264,7 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
+            this.Column2.Width = 135;
             // 
             // Column4
             // 
@@ -308,7 +272,7 @@
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
+            this.Column4.Width = 135;
             // 
             // Column3
             // 
@@ -316,20 +280,30 @@
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 125;
+            this.Column3.Width = 135;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nurse Data";
             // 
             // Nurses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Nurses";
-            this.Size = new System.Drawing.Size(867, 558);
+            this.Size = new System.Drawing.Size(650, 453);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNurse)).EndInit();
@@ -340,8 +314,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnImport;
-        private System.Windows.Forms.PictureBox patientPicture;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;

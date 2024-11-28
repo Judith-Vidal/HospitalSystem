@@ -34,31 +34,29 @@
             this.Exit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblSignout = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnMedRec = new System.Windows.Forms.Button();
             this.btnAppt = new System.Windows.Forms.Button();
             this.btnNurses = new System.Windows.Forms.Button();
             this.btnDoctors = new System.Windows.Forms.Button();
             this.btnPatients = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.patients2 = new HospitalSystem.Patients();
-            this.doctors2 = new HospitalSystem.Doctors();
             this.nurses1 = new HospitalSystem.Nurses();
+            this.doctors2 = new HospitalSystem.Doctors();
+            this.patients2 = new HospitalSystem.Patients();
+            this.appointments1 = new HospitalSystem.Appointments();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblSignout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,14 +116,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.lblSignout);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnMedRec);
             this.panel2.Controls.Add(this.btnAppt);
             this.panel2.Controls.Add(this.btnNurses);
             this.panel2.Controls.Add(this.btnDoctors);
@@ -139,23 +135,11 @@
             this.panel2.Size = new System.Drawing.Size(175, 454);
             this.panel2.TabIndex = 1;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(16, 364);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 12;
-            this.pictureBox7.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(16, 318);
+            this.pictureBox6.Location = new System.Drawing.Point(16, 336);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
@@ -167,7 +151,7 @@
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 274);
+            this.pictureBox5.Location = new System.Drawing.Point(16, 286);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
@@ -179,7 +163,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(16, 229);
+            this.pictureBox4.Location = new System.Drawing.Point(16, 233);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -199,18 +183,18 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // lblSignout
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(8, 418);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.lblSignout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSignout.Image = ((System.Drawing.Image)(resources.GetObject("lblSignout.Image")));
+            this.lblSignout.Location = new System.Drawing.Point(8, 418);
+            this.lblSignout.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSignout.Name = "lblSignout";
+            this.lblSignout.Size = new System.Drawing.Size(26, 28);
+            this.lblSignout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.lblSignout.TabIndex = 7;
+            this.lblSignout.TabStop = false;
+            this.lblSignout.Click += new System.EventHandler(this.lblSignout_Click);
             // 
             // label3
             // 
@@ -224,24 +208,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Sign Out";
             // 
-            // btnMedRec
-            // 
-            this.btnMedRec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnMedRec.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMedRec.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnMedRec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnMedRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedRec.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedRec.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnMedRec.Location = new System.Drawing.Point(13, 356);
-            this.btnMedRec.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMedRec.Name = "btnMedRec";
-            this.btnMedRec.Size = new System.Drawing.Size(150, 37);
-            this.btnMedRec.TabIndex = 6;
-            this.btnMedRec.Text = "        MEDICAL RECORDS";
-            this.btnMedRec.UseVisualStyleBackColor = false;
-            this.btnMedRec.Click += new System.EventHandler(this.btnMedRec_Click_1);
-            // 
             // btnAppt
             // 
             this.btnAppt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -251,13 +217,14 @@
             this.btnAppt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAppt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAppt.Location = new System.Drawing.Point(13, 310);
+            this.btnAppt.Location = new System.Drawing.Point(13, 328);
             this.btnAppt.Margin = new System.Windows.Forms.Padding(2);
             this.btnAppt.Name = "btnAppt";
             this.btnAppt.Size = new System.Drawing.Size(150, 37);
             this.btnAppt.TabIndex = 5;
             this.btnAppt.Text = "   APPOINTMENTS";
             this.btnAppt.UseVisualStyleBackColor = false;
+            this.btnAppt.Click += new System.EventHandler(this.btnAppt_Click);
             // 
             // btnNurses
             // 
@@ -268,7 +235,7 @@
             this.btnNurses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNurses.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNurses.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNurses.Location = new System.Drawing.Point(13, 265);
+            this.btnNurses.Location = new System.Drawing.Point(13, 277);
             this.btnNurses.Margin = new System.Windows.Forms.Padding(2);
             this.btnNurses.Name = "btnNurses";
             this.btnNurses.Size = new System.Drawing.Size(150, 37);
@@ -286,7 +253,7 @@
             this.btnDoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoctors.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoctors.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDoctors.Location = new System.Drawing.Point(13, 220);
+            this.btnDoctors.Location = new System.Drawing.Point(13, 224);
             this.btnDoctors.Margin = new System.Windows.Forms.Padding(2);
             this.btnDoctors.Name = "btnDoctors";
             this.btnDoctors.Size = new System.Drawing.Size(150, 37);
@@ -336,14 +303,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // patients2
+            // nurses1
             // 
-            this.patients2.BackColor = System.Drawing.SystemColors.Control;
-            this.patients2.Location = new System.Drawing.Point(177, 34);
-            this.patients2.Margin = new System.Windows.Forms.Padding(2);
-            this.patients2.Name = "patients2";
-            this.patients2.Size = new System.Drawing.Size(648, 454);
-            this.patients2.TabIndex = 2;
+            this.nurses1.Location = new System.Drawing.Point(176, 34);
+            this.nurses1.Margin = new System.Windows.Forms.Padding(2);
+            this.nurses1.Name = "nurses1";
+            this.nurses1.Size = new System.Drawing.Size(649, 456);
+            this.nurses1.TabIndex = 4;
             // 
             // doctors2
             // 
@@ -353,19 +319,28 @@
             this.doctors2.Size = new System.Drawing.Size(649, 454);
             this.doctors2.TabIndex = 3;
             // 
-            // nurses1
+            // patients2
             // 
-            this.nurses1.Location = new System.Drawing.Point(176, 32);
-            this.nurses1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nurses1.Name = "nurses1";
-            this.nurses1.Size = new System.Drawing.Size(649, 456);
-            this.nurses1.TabIndex = 4;
+            this.patients2.BackColor = System.Drawing.SystemColors.Control;
+            this.patients2.Location = new System.Drawing.Point(177, 34);
+            this.patients2.Margin = new System.Windows.Forms.Padding(2);
+            this.patients2.Name = "patients2";
+            this.patients2.Size = new System.Drawing.Size(648, 454);
+            this.patients2.TabIndex = 2;
+            // 
+            // appointments1
+            // 
+            this.appointments1.Location = new System.Drawing.Point(176, 34);
+            this.appointments1.Name = "appointments1";
+            this.appointments1.Size = new System.Drawing.Size(649, 454);
+            this.appointments1.TabIndex = 5;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 488);
+            this.Controls.Add(this.appointments1);
             this.Controls.Add(this.nurses1);
             this.Controls.Add(this.doctors2);
             this.Controls.Add(this.patients2);
@@ -380,12 +355,11 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblSignout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -399,13 +373,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPatients;
-        private System.Windows.Forms.Button btnMedRec;
         private System.Windows.Forms.Button btnAppt;
         private System.Windows.Forms.Button btnNurses;
         private System.Windows.Forms.Button btnDoctors;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox lblSignout;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -418,5 +390,6 @@
         private Patients patients2;
         private Doctors doctors2;
         private Nurses nurses1;
+        private Appointments appointments1;
     }
 }

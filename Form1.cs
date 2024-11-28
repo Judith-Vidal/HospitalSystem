@@ -46,7 +46,13 @@ namespace HospitalSystem
                     this.Hide(); // Hide the login window
             } else {
                     // If the username or password is incorrenct, show an error message
-                    MessageBox.Show("Invalid username or password.\nTry again");
+                    MessageBox.Show("Invalid username or password.\nTry again", "Login error", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtUsername.Text = string.Empty;
+                txtPassword.Text = string.Empty;
+                txtUsername.Focus();
+                chkBoxPasword.Checked = false;
             }
         }
 
@@ -68,6 +74,11 @@ namespace HospitalSystem
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void chkBoxPasword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = chkBoxPasword.Checked ? '\0' : '*';
         }
     }
 }

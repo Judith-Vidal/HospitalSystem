@@ -18,6 +18,7 @@ namespace HospitalSystem
             patients2.Visible = false;
             doctors2.Visible = false;
             nurses1.Visible = false;
+            appointments1.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,8 +31,19 @@ namespace HospitalSystem
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void lblSignout_Click(object sender, EventArgs e)
         {
+            DialogResult check = MessageBox.Show("Are you sure you want to logout?", "Confirmation Message",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (check == DialogResult.Yes)  {
+
+                Login login = new Login();
+                //Form1 login = new Form1();
+                login.Show();
+                this.Hide();
+
+            }
 
         }
 
@@ -50,6 +62,7 @@ namespace HospitalSystem
             patients2.Visible = true;
             doctors2.Visible = false;
             nurses1.Visible = false;
+            appointments1.Visible = false;
         }
 
         private void btnDoctors_Click(object sender, EventArgs e)
@@ -57,6 +70,7 @@ namespace HospitalSystem
             doctors2.Visible = true;
             patients2.Visible = false;
             nurses1.Visible = false;
+            appointments1.Visible = false;
         }
 
         private void doctors2_Load(object sender, EventArgs e)
@@ -84,6 +98,15 @@ namespace HospitalSystem
             doctors2.Visible = false;
             patients2.Visible = false;
             nurses1.Visible = true;
+            appointments1.Visible = false;
+        }
+
+        private void btnAppt_Click(object sender, EventArgs e)
+        {
+            doctors2.Visible = false; 
+            patients2.Visible = false;
+            nurses1.Visible = false;
+            appointments1.Visible = true;
         }
     }
 }

@@ -32,8 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbboxSpecialty = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnImport = new System.Windows.Forms.Button();
-            this.patientPicture = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -47,14 +45,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewDoctor = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientPicture)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctor)).BeginInit();
             this.SuspendLayout();
@@ -64,8 +61,6 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.cmbboxSpecialty);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.btnImport);
-            this.panel2.Controls.Add(this.patientPicture);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
@@ -102,7 +97,7 @@
             "Pediatrics",
             "",
             "Radiology"});
-            this.cmbboxSpecialty.Location = new System.Drawing.Point(337, 51);
+            this.cmbboxSpecialty.Location = new System.Drawing.Point(397, 51);
             this.cmbboxSpecialty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbboxSpecialty.Name = "cmbboxSpecialty";
             this.cmbboxSpecialty.Size = new System.Drawing.Size(142, 21);
@@ -112,39 +107,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(280, 54);
+            this.label4.Location = new System.Drawing.Point(340, 54);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 14);
             this.label4.TabIndex = 19;
             this.label4.Text = "Specialty:";
-            // 
-            // btnImport
-            // 
-            this.btnImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnImport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnImport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnImport.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnImport.Location = new System.Drawing.Point(522, 95);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(62, 22);
-            this.btnImport.TabIndex = 18;
-            this.btnImport.Text = "Import";
-            this.btnImport.UseVisualStyleBackColor = false;
-            // 
-            // patientPicture
-            // 
-            this.patientPicture.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.patientPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.patientPicture.Location = new System.Drawing.Point(522, 20);
-            this.patientPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.patientPicture.Name = "patientPicture";
-            this.patientPicture.Size = new System.Drawing.Size(62, 75);
-            this.patientPicture.TabIndex = 17;
-            this.patientPicture.TabStop = false;
             // 
             // btnCancel
             // 
@@ -154,7 +122,7 @@
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(220, 119);
+            this.btnCancel.Location = new System.Drawing.Point(369, 122);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(73, 28);
@@ -171,7 +139,7 @@
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(120, 119);
+            this.btnDelete.Location = new System.Drawing.Point(269, 122);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(73, 28);
@@ -188,7 +156,7 @@
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(26, 119);
+            this.btnUpdate.Location = new System.Drawing.Point(176, 122);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(73, 28);
@@ -199,7 +167,7 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(104, 82);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(164, 82);
             this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(133, 20);
@@ -209,7 +177,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 84);
+            this.label7.Location = new System.Drawing.Point(76, 84);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 14);
@@ -226,7 +194,7 @@
             "D",
             "E",
             "F"});
-            this.cmbboxDepartment.Location = new System.Drawing.Point(337, 18);
+            this.cmbboxDepartment.Location = new System.Drawing.Point(397, 18);
             this.cmbboxDepartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbboxDepartment.Name = "cmbboxDepartment";
             this.cmbboxDepartment.Size = new System.Drawing.Size(59, 21);
@@ -236,7 +204,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(264, 20);
+            this.label5.Location = new System.Drawing.Point(324, 20);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 14);
@@ -245,7 +213,7 @@
             // 
             // txtDoctorName
             // 
-            this.txtDoctorName.Location = new System.Drawing.Point(104, 51);
+            this.txtDoctorName.Location = new System.Drawing.Point(164, 51);
             this.txtDoctorName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDoctorName.Name = "txtDoctorName";
             this.txtDoctorName.Size = new System.Drawing.Size(133, 20);
@@ -255,7 +223,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 52);
+            this.label3.Location = new System.Drawing.Point(100, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 14);
@@ -264,7 +232,7 @@
             // 
             // txtDoctorID
             // 
-            this.txtDoctorID.Location = new System.Drawing.Point(104, 20);
+            this.txtDoctorID.Location = new System.Drawing.Point(164, 20);
             this.txtDoctorID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDoctorID.Name = "txtDoctorID";
             this.txtDoctorID.Size = new System.Drawing.Size(115, 20);
@@ -275,7 +243,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 20);
+            this.label2.Location = new System.Drawing.Point(100, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 14);
@@ -313,16 +281,27 @@
             this.Column4,
             this.Column5});
             this.dataGridViewDoctor.EnableHeadersVisualStyles = false;
-            this.dataGridViewDoctor.Location = new System.Drawing.Point(76, 44);
+            this.dataGridViewDoctor.Location = new System.Drawing.Point(24, 42);
             this.dataGridViewDoctor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewDoctor.Name = "dataGridViewDoctor";
             this.dataGridViewDoctor.ReadOnly = true;
             this.dataGridViewDoctor.RowHeadersVisible = false;
             this.dataGridViewDoctor.RowHeadersWidth = 51;
             this.dataGridViewDoctor.RowTemplate.Height = 24;
-            this.dataGridViewDoctor.Size = new System.Drawing.Size(472, 170);
+            this.dataGridViewDoctor.Size = new System.Drawing.Size(579, 170);
             this.dataGridViewDoctor.TabIndex = 1;
             this.dataGridViewDoctor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Doctor Data";
             // 
             // Column1
             // 
@@ -330,7 +309,6 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -338,7 +316,7 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
+            this.Column2.Width = 120;
             // 
             // Column3
             // 
@@ -354,7 +332,7 @@
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
+            this.Column4.Width = 105;
             // 
             // Column5
             // 
@@ -363,17 +341,6 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 125;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Doctor Data";
             // 
             // Doctors
             // 
@@ -386,7 +353,6 @@
             this.Size = new System.Drawing.Size(650, 453);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctor)).EndInit();
@@ -397,8 +363,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnImport;
-        private System.Windows.Forms.PictureBox patientPicture;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
