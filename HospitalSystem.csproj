@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentInfo.cs" />
     <Compile Include="Appointments.cs">
       <SubType>UserControl</SubType>
     </Compile>

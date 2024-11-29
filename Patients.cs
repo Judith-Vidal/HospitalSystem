@@ -17,7 +17,7 @@ namespace HospitalSystem
         List<PatientInfo> patientList = new List<PatientInfo>();
 
         // Filepath to save the patient data
-        string filepath = "C:\\Users\\guzma\\source\\repos\\Hospital-System\\PatientRecords\\PatientRecords.txt";
+        string filepath = "C:\\Users\\Judith\\source\\repos\\Hospital system_v3\\PatientRecords\\PatientRecords.txt";
 
         public Patients()
         {
@@ -49,6 +49,7 @@ namespace HospitalSystem
                 newPatient.phoneNumber = entries[2];
                 newPatient.gender = entries[3];
                 newPatient.age = entries[4];
+
                 newPatient.address = entries[5];
 
                 patientList.Add(newPatient); // Add the patient to the list
@@ -87,6 +88,15 @@ namespace HospitalSystem
                 // Show error message if something goes wrong
                 MessageBox.Show($"\r\nError saving the data: {ex.Message}");
             }
+
+            // Clear all input fields on the form  
+            txtPatientID.Text = string.Empty;
+            txtPatientName.Text = string.Empty;
+            txtPhoneNumber.Text = string.Empty;
+            cmbboxGender.SelectedIndex = -1;
+            txtAge.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            txtPatientID.Focus();
         }
 
         private void txtPatientID_TextChanged(object sender, EventArgs e)

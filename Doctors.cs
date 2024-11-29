@@ -16,7 +16,7 @@ namespace HospitalSystem
         List<DoctorInfo> doctorList = new List<DoctorInfo>();
 
         // Filepath to save the patient data
-        string filepath = "C:\\Users\\guzma\\source\\repos\\Hospital-System\\DoctorsInfo\\DoctorInfo.txt";
+        string filepath = "C:\\Users\\Judith\\source\\repos\\Hospital system_v3\\DoctorsInfo\\DoctorInfo.txt";
 
         public Doctors()
         {
@@ -134,6 +134,14 @@ namespace HospitalSystem
                 // Show error message if something goes wrong
                 MessageBox.Show($"\r\nError saving the data: {ex.Message}");
             }
+
+            // Clear all input fields on the form  
+            txtDoctorID.Text = string.Empty;
+            txtDoctorName.Text = string.Empty;
+            txtPhoneNumber.Text = string.Empty;
+            cmbboxDepartment.SelectedIndex = -1;
+            cmbboxSpecialty.SelectedIndex = -1;
+            txtDoctorID.Focus();
         }
 
         private void txtDoctorID_TextChanged(object sender, EventArgs e)

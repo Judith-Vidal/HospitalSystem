@@ -1,0 +1,10 @@
+1,    Liz Baudains,    B,    917-954-1225
+2,    Elaine Hardinge,    D,    501-671-3691
+3,    Rivi Rameau,    E,    915-574-1790
+4,    Olga Chritchley,    A,    581-772-4648
+5,    Robinett Lodge,    F,    229-561-8603
+6,    Vladimir Lawlance,    E,    367-647-1380
+7,    Yettie Joao,    C,    236-711-4434
+8,    Gertrud Defont,    D,    917-632-7065
+9,    Gary Wallett,    F,    872-556-1362
+10,    Gus Tocqueville,    E,    571-718-9963
