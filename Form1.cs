@@ -36,6 +36,7 @@ namespace HospitalSystem
             txtUsername.Text = string.Empty;
             txtPassword.Text = string.Empty;
             txtUsername.Focus();
+            chkBoxPasword.Checked = false;
         }
 
         private void btnLogin_Click(object sender, EventArgs e) {
@@ -46,7 +47,7 @@ namespace HospitalSystem
                     this.Hide(); // Hide the login window
             } else {
                     // If the username or password is incorrenct, show an error message
-                    MessageBox.Show("Invalid username or password.\nTry again", "Login error", 
+                    MessageBox.Show("Invalid username or password.\nTry again", "Login Error", 
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 txtUsername.Text = string.Empty;

@@ -15,7 +15,7 @@ namespace HospitalSystem
         public Main()
         {
             InitializeComponent();
-            patients2.Visible = false;
+            patients2.Visible = true;
             doctors2.Visible = false;
             nurses1.Visible = false;
             appointments1.Visible = false;

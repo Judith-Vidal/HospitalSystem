@@ -1,8 +1,7 @@
-Matt Vaughn, Ryon Buche, B, 12/2/2024,  9:00 AM, Rheumatoid arthritis
-Patricia Gyer, Donnell Mounsie, A, 12/9/2024, 10:06 AM, Allergies Tre Nuts
-Lindsy Garcia, Marta Arent, E, 12/10/2024, 11:00 AM, Medication: Losartan 50 mg (once daily)
-Reggi Colaton, Frederica Futty, D, 12/11/2024, 12:00 PM, Hypertension
-Jaquenetta Worton, Tisha McClenan, A, 12/13/2024, 2:00 PM, Controlled asthma
-Hallie Nucator, Kennie Wheaton, B, 12/16/2024, 3:00 PM, Allergies: Bee stings, Dairy products
-Lindsy Garcia, Frederica Futty, D, 12/17/2024, 4:00 PM, Type 2 Diabetes,
-Hallie Nucator, Morris Monckton, C, 12/18/2024, 10:00 AM, Hypothyroidism
+Matt Vaughn,      Ryon Buche,      B,      12/2/2024,       9:00 AM,      Rheumatoid arthritis
+Patricia Gyer,      Donnell Mounsie,      A,      12/9/2024,      10:06 AM,      Allergies Tre Nuts
+Lindsy Garcia,      Marta Arent,      E,      12/10/2024,      11:00 AM,      Medication: Losartan 50 mg (once daily)
+Jaquenetta Worton,      Tisha McClenan,      A,      12/13/2024,      2:00 PM,      Controlled asthma
+Hallie Nucator,      Kennie Wheaton,      B,      12/16/2024,      3:00 PM,      Allergies: Bee stings
+Lindsy Garcia,      Frederica Futty,      D,      12/17/2024,      4:00 PM,      Type 2 Diabetes
+Hallie Nucator,      Morris Monckton,      C,      12/18/2024,      10:00 AM,      Hypothyroidism

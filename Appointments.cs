@@ -16,7 +16,7 @@ namespace HospitalSystem
         List<AppointmentInfo> apptList = new List<AppointmentInfo>();
 
         // Filepath to save the appt data
-        string filepath = "C:\\Users\\Judith\\source\\repos\\Hospital system_v3\\AppointmentInfo\\AppointmentInfo.txt";
+        string filepath = "C:\\Users\\guzma\\source\\repos\\Hospital-System\\AppointmentInfo\\AppointmentInfo.txt";
 
         public Appointments()
         {

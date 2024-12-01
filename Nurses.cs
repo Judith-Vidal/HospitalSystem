@@ -16,7 +16,7 @@ namespace HospitalSystem
         List<NurseInfo> nurseList = new List<NurseInfo>();
 
         // Filepath to save the nurse data
-        string filepath = "C:\\Users\\Judith\\source\\repos\\Hospital system_v3\\NurseInfo\\NurseInfo.txt";
+        string filepath = "C:\\Users\\guzma\\source\\repos\\Hospital-System\\NurseInfo\\NurseInfo.txt";
 
         public Nurses()
         {
