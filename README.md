@@ -10,7 +10,6 @@ Created as a **final project** for the *Visual Basic Programming* course.
 - Appointment scheduling  
 - Billing and payment tracking  
 - User login with admin/staff roles  
-- SQL database integration  
 
 ---
 
@@ -26,9 +25,10 @@ Created as a **final project** for the *Visual Basic Programming* course.
 1. Clone this repository  
    ```bash
    git clone https://github.com/<yourusername>/HospitalSystem.git
-👥 Contributors
-Your Name — Developer
-(Optional) Collaborator Name — Database / UI Design
-🎓 Purpose
-Educational project demonstrating OOP, event-driven programming, and database integration in C#.
-Developed as part of my coursework at Solano Community College to apply real-world programming concepts.
+## 👥 Contributors
+- **Judith Morales Vidal**
+- **Amiga**
+
+## 🎓 Purpose
+- Educational project demonstrating OOP, event-driven programming, and database integration in C#.
+- Developed as part of my coursework at Solano Community College to apply real-world programming concepts.
